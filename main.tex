@@ -1,0 +1,293 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage{standalone}
+\usepackage{zh_CN-Adobefonts_external}
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%\usepackage[utf8]{inputenc}
+
+%\usepackage{booktabs}
+\usepackage{fontawesome}
+\usepackage{marvosym} % For cool symbols.
+%\usepackage{hyperref}
+
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+ % Your first name
+\familyname{陈} % Your last name
+\firstname{勇彪}
+% All information in this block is optional, comment out any lines you don't need
+\title{个人简历}
+\address{电子信息与电气工程学院}{上海交通大学}
+\mobile{(+86) 18818209278}
+
+
+%\fax{(000) 111 1113}
+ 
+%\social{github}{stefano-bragaglia}
+\email{chenyongbiao0319@sjtu.edu.cn} 
+
+
+
+%\homepage{给i挺好/}{My Webpage}
+
+% social link \faGithub, \faSkype, \faLinkedin,\faStackExchange, and \faStackOverflow
+% \extrainfo{
+%     \faGithub\href{https://github.com/xyz}{ Github} \quad
+%     \faLinkedin\href{https://www.linkedin.com/abc/}{ Linkedin} \quad
+%     \faSkype\href{https://skype.com/abc}{Skype}
+%     }
+
+
+
+%\social[linkedin][www.linkedin.com]{name}
+% The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+
+\photo[70pt][0.3pt]{bio} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+%\quote{Not Attention, Patience is all we need.}
+
+%----------------------------------------------------------------------------------------
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
+    }%
+}
+
+
+
+\usepackage{multibbl}
+\newcommand\Colorhref[3][orange]{\href{#2}{\small\color{#1}#3}}
+
+
+% \newcommand{\cvreference}[7]{%
+%     \textbf{#1}\newline% Name
+%     \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+%     \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+%     \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+%     \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+%     \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+%     \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{教育经历}
+
+\cventry{2016--2023}{博士, 软件工程}{上海交通大学}{上海}{中国}
+{计算机视觉, 大规模图像检索, 行人重识别, 车辆重识别, 图像生成}  % Arguments not required can be left empty
+
+% \cventry{2013--2015 :}{Master of Engineering, Information Technology}{Indian Institute of Engineering Science \& Technology}{Shibpur(\textit{Formerly} Bengal Engineering and Science University, Shibpur)}{}{}
+% %{Advanced exposure to various areas of computer science along with a one and half year research project on Reversible Logic Synthesis.}
+% %\cvitem{CGPA :}{7.96/10}
+\cventry{2012--2016 }{学士, 软件工程}{西北工业大学}{陕西}{中国}
+{}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{学术论文发表}
+\subsection{期刊论文}
+\cventry{2019}{\textbf{Pratik Dutta}, Sriparna Saha, Sanket Pai and Aviral Kumar}{}{Protein-protein Interaction based Generative Model for Improving Gene Clustering}{In \textit{\textbf{Scientific Reports-Nature}} (\textbf{Impact Factor: 4.12})}{}
+
+\subsection{Journal Articles}
+\newbibliography{journal}
+\bibliographystyle{journal}{plainyrrev}
+\nocite{journal}{*}
+\bibliography{journal}{journal}
+{\large \textsc{Refereed Journal Articles}}
+
+
+
+\newbibliography{conference}
+\nocite{conference}{*}
+\bibliographystyle{conference}{chronological}
+\bibliography{conference}{conference}
+{\large \textsc{Refereed Conference Publications}}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{科研项目}
+\subsection{上海交通大学， 上海}
+\cventry{2018， 六月 -- 2019， 二月}{\textit{跨模态行人重识别研究}}{}{}{}
+{
+  使用双流卷积神经网络进行提取RGB 图片和Infrared 图片的特征。
+  设计了一个基于自编码器的重构编码来对齐两个模态的特征。
+  基于贝叶斯学习设计了模态和外表恒定的损失函数来进行度量学习，使得学到对于模态和外
+  观不变的特征。
+  在两个标准数据集上取得了state-of-the-art 性能表现（论文发表在国际会议ICMR 2020）。
+}
+
+\cventry{2019， 十月 -- 2020， 八月}{\textit{高效的大规模车辆重识别}}{}{}{}
+{使用卷积神经网络CNN 进行连续的特征提取。
+设计了一个新型的二进制哈希码学习模块。
+提出学习适合于分类的二进制编码，并且考虑到无法直接在二进制码上使用随机梯度下降优
+化网络，我们提出了一个交叉优化的优化手段
+提出使用Cyclic coordient descent 学习二进制哈希码，以及使用三元损失函数，以及量化损失
+函数优化神经网络。
+此工作属于第一个使用深度哈希解决大规模的车辆重识别的工作，论文发表在（IEEE TITS JCR
+1 区）。
+}
+
+
+\cventry{2021， 二月 -- 2021， 十月}{\textit{基于视觉Transformer 的大规模图像检索}}{}{}{}
+{提出一个孪生视觉Transformer 模型用于提取特征。
+采取一个局部全局的双流Transformer 模块用于提取细粒度特征。
+使用全连接和Tanh 激活函数生成哈希向量。
+使用贝叶斯学习来进行保距的度量学习。在三个标准数据集上进行实验，和对比的基准方法
+比较可以显著提高模型的性能。
+此工作是第一个完全基于transformer 进行深度哈希学习来做图像检索的工作（论文发表在国
+际会议ICMR 2022）。
+}
+
+\cventry{2022，三月 -- 2022，十月}{\textit{基于视觉Transformer 的深度乘积量化}}{}{}{}
+{
+  提出了第一个完全基于视觉Transformer 的乘积量化网络, 使用softmax 规避乘积量化中的不
+可导问题。
+采用一个双支视觉Transformer 来提取更加细粒度的特征，同时尽量减少计算开销。
+提出第一个基于直接优化训练目标mAP 的量化损失函数。
+模型在大规模基准数据集上取得了显著的性能提升。
+}
+
+
+
+
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Fellowships \& Awards
+%----------------------------------------------------------------------------------------
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Academic achievements
+%----------------------------------------------------------------------------------------
+
+\section{学术服务}
+
+
+\cvitem{2021}{\textbf{R\textit{IEEE International Conference on Multimedia and Expo  审稿人} (ICME 2021)}, 深圳, 中国.}
+
+\cvitem{2022}{\textbf{\textit{IEEE International Conference on Multimedia and Expo 审稿人} (ICME 2022)},  台北, 台湾.}
+
+\cvitem{2023}{\textbf{\textit{IEEE International Conference on Acoustics, Speech and Signal Processing 审稿人} (ICASSP 2023)},  罗德岛, 希腊.}
+
+\cvitem{2023}{\textbf{\textit{IEEE International Conference on Multimedia and Expo 审稿人} (ICME 2023)},  布里斯班, 澳大利亚.}
+
+\cvitem{2023}{\textbf{\textit{IEEE Transactions on Multimedia 审稿人} (TMM 2023)}.}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{计算机技能}
+
+\cvitem{编程语言}{Python, PyTorch, Numpy, Tensorflow, C, Java}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Position of Responsibility SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+% \section{Referees}
+
+
+% \begin{tabular}{lr}
+% % Referee 1
+% \begin{minipage}[t]{3in}
+% \textbf{Dr. XXXXX XXXXX}\\
+% \textit{Associate Professor, Department of} \\
+% \textit{Computer Science \& Engineering}\\
+% Institute name\\
+% \Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
+% \end{minipage}
+% &
+% % Referee 2
+% \begin{minipage}[t]{3in}
+% \textbf{Dr. XXXXX XXXXX}\\
+% \textit{Associate Professor, Department of} \\
+% \textit{Computer Science \& Engineering}\\
+% Institute name\\
+% \Telefon\ +(601) 877-6236\\
+% \Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
+% \end{minipage}
+% \\
+% \\ % Additional newline for spacing.
+% % Referee 3
+% \begin{minipage}[t]{3in}
+% \textbf{Dr. XXXXX XXXXX}\\
+% \textit{Associate Professor, Department of} \\
+% \textit{Computer Science \& Engineering}\\
+% Institute name\\
+% \Telefon\ +(601) 877-6236\\
+% \Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
+% \end{minipage}
+&
+% \\
+% \end{tabular}
+
+
+\end{document}

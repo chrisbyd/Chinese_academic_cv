@@ -1,0 +1,5 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'journal.blg'
+[97] biber-darwin:340> INFO - === 五  8  4, 2023, 22:04:48
+[244] Utils.pm:411> ERROR - Cannot find 'journal.bcf'!
+[244] Biber.pm:132> INFO - ERRORS: 1
